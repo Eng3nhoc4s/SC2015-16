@@ -1,2 +1,6 @@
-# SC2015-16
-Projecto desenvolvido em Segurança e Confiabilidade 2015-16
+Para executar o servidor, usar ./runServer
+
+Para executar o cliente, usar ./runClient <argumentos>
+
+
+Ao correr este executavel estamos a invocar as definicoes para a sandbox do java.
