@@ -1,0 +1,36 @@
+grant {
+
+//Server sockets
+permission java.net.SocketPermission "localhost:*", 						"accept,listen,resolve";
+
+//Keystore
+permission java.util.PropertyPermission "javax.net.ssl.keyStore", 			"read, write";
+permission java.util.PropertyPermission "javax.net.ssl.keyStorePassword", 	"read, write";
+
+
+//Credentials file
+permission java.io.FilePermission "!credentialsFile", 						"read,write";
+permission java.io.FilePermission "!credentialsFile.mac", 					"read,write";
+
+//Permissions file
+permission java.io.FilePermission "!groupsFile", 							"read,write";
+permission java.io.FilePermission "!groupsFile.mac", 						"read,write";
+
+//Policy files
+permission java.io.FilePermission "server.policy", 							"read,write";
+permission java.io.FilePermission "server.policy.mac", 						"read,write";
+
+//Folders
+permission java.io.FilePermission "users", 									"read,write";
+permission java.io.FilePermission "groups", 								"read,write";
+permission java.io.FilePermission "messages", 								"read,write";
+
+permission java.io.FilePermission "users/-", "read,write";
+permission java.io.FilePermission "groups/-", "read,write";
+permission java.io.FilePermission "messages/-", "read,write";
+
+
+
+
+
+};

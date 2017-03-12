@@ -1,0 +1,12 @@
+grant {
+
+//Server sockets
+permission java.net.SocketPermission "*:23456", "connect,resolve";
+
+//Files
+permission java.io.FilePermission "*", "read, write, delete";
+
+//Truststore
+permission java.util.PropertyPermission "javax.net.ssl.trustStore", "read, write";
+permission java.util.PropertyPermission "javax.net.ssl.trustStorePassword", "read, write";
+};
